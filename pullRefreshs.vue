@@ -32,7 +32,7 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .vue-pull-refresh {
         overflow-y: auto;
         transition: .33s; 

@@ -177,19 +177,17 @@
                 }
             },
             start(e) {
-                 e.preventDefault()
                 if(document.body.scrollTop > 0) {
                     return
                 }
                 if(this.loading) {
-                   
+                    e.preventDefault()
                     return
                 }
                 // 取第一个手指的触摸点作为起始点
                 this.touchStart = e.targetTouches[0].clientY
             },
             moves(e, pullRefresh, refreshMsg) {
-                 e.preventDefault()
                  if(document.body.scrollTop > 0) {
                     return
                 }
@@ -203,7 +201,9 @@
 
                 if(scrollTop === 0) { 
                     this.distance = touch.clientY - this.touchStart
-                    /* e.preventDefault()*/
+                    if(this.distance > 0) {
+                       e.preventDefault()
+                    }
                     if(this.distance > this.PullDistance) {
                         if(this.distance < this.MaxDistance) {
                             pullRefresh.style.overflow = 'inherit'
@@ -222,7 +222,7 @@
                 }
             },
             end(e, pullRefresh, refreshMsg) {
-                 e.preventDefault()
+                 
                 if(document.body.scrollTop > 0) {
                     return
                 }
@@ -230,6 +230,7 @@
                     return 
                 }
                 if(this.loading) {
+                   e.preventDefault()
                    return
                 }
                 if( this.distance > 80 && this.distance < 120) {

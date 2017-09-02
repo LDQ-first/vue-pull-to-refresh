@@ -1,0 +1,26 @@
+{
+  "name": "vue-userefresh",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gitn": "git add . && git commit -m 'modify' && git push origin && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LDQ-first/vue-userefresh.git"
+  },
+  "keywords": [
+    "vue",
+    "refresh",
+    "plugin",
+    "refresh"
+  ],
+  "author": "LDQ-first",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LDQ-first/vue-userefresh/issues"
+  },
+  "homepage": "https://github.com/LDQ-first/vue-userefresh#readme"
+}

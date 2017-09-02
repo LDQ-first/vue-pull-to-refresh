@@ -1,6 +1,6 @@
 {
   "name": "vue-pull-to-refresh",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LDQ-first/vue-userefresh.git"
+    "url": "git+https://github.com/LDQ-first/vue-pull-to-refresh.git"
   },
   "keywords": [
     "vue",
@@ -20,7 +20,7 @@
   "author": "LDQ-first",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LDQ-first/vue-userefresh/issues"
+    "url": "https://github.com/LDQ-first/vue-pull-to-refresh/issues"
   },
-  "homepage": "https://github.com/LDQ-first/vue-userefresh#readme"
+  "homepage": "https://github.com/LDQ-first/vue-pull-to-refresh#readme"
 }

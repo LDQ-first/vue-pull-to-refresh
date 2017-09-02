@@ -135,9 +135,9 @@
                 EPullTip: 'Pull To Refresh (。＾▽＾)',
                 EReleaseTip: 'Release To Refresh ヽ(￣▽￣)و',
                 ELoadingTip: 'Loading  ─=≡Σ(((つ•̀ω•́)つ',
-                PullDistance: 60,
-                ReleaseDistance: 120,
-                MaxDistance: 160
+                PullDistance: 50,
+                ReleaseDistance: 80,
+                MaxDistance: 140
             }
         },
         created () {
@@ -226,14 +226,14 @@
                 if(document.body.scrollTop > 0) {
                     return
                 }
-                if(this.distance <= 80 ) {
+                if(this.distance <= this.PullDistance ) {
                     return 
                 }
                 if(this.loading) {
                    e.preventDefault()
                    return
                 }
-                if( this.distance > 80 && this.distance < 120) {
+                if( this.distance > this.PullDistance && this.distance < this.ReleaseDistance) {
                      pullRefresh.scrollTop = 0
                     pullRefresh.style.overflow = 'auto'
                     pullRefresh.style.transform = 'translate3D(0px, 0px, 0px)'
@@ -242,7 +242,7 @@
                     return
                     
                 }
-                if(this.flag && this.distance > 120) {
+                if(this.flag && this.distance > this.ReleaseDistance) {
                     pullRefresh.style.transform = 'translate3D(0px, 50px, 0px)'
                     refreshMsg.style.height = `50px`
                     refreshMsg.style.lineHeight = `50px`

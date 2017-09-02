@@ -1,6 +1,6 @@
 {
-  "name": "vue-userefresh",
-  "version": "1.0.3",
+  "name": "vue-pull-to-refresh",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {

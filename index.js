@@ -5,3 +5,5 @@ const pullToRefresh = {
         Vue.component('pullRefresh', pullRefreshsComponent)
     }
 }
+
+export default pullToRefresh

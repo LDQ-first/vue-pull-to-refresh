@@ -14,7 +14,6 @@
 ``` javascript
 /*-- npm --*/
 npm install --save vue-pull-to-refresh
-npm install --save sass-loader node-sass
 ```
   
 ``` javascript
